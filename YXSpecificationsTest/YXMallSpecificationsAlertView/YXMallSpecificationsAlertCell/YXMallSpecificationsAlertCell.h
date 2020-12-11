@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** collectionView高度 */
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewConstraintHeight;
 
-- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr;
+- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath model:(YXMallSpecificationsModel *)model;
 
 @end
 

@@ -95,7 +95,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     YXMallSpecificationsAlertCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YXMallSpecificationsAlertCell class])];
-    [cell reloadValueByIndexPath:indexPath arr:_model.goodsSpecificationMsgArr];
+    [cell reloadValueByIndexPath:indexPath model:_model];
     
     return cell;
 }

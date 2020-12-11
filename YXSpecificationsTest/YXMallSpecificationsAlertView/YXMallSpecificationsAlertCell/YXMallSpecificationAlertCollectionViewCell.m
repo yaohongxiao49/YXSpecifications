@@ -7,11 +7,18 @@
 
 #import "YXMallSpecificationAlertCollectionViewCell.h"
 
+@interface YXMallSpecificationAlertCollectionViewCell ()
+
+@property (nonatomic, copy) YXMallSpecificationsModel *model;
+
+@end
+
 @implementation YXMallSpecificationAlertCollectionViewCell
 
 #pragma mark - 刷新数据
-- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr {
+- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr model:(YXMallSpecificationsModel *)model {
     
+    _model = model;
     YXMallSpecificationsMsgModel *msgModel = arr[indexPath.row];
     [self.titleBtn setTitle:msgModel.goodSpecificationsSonTitle forState:UIControlStateNormal];
     

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *titleBtn;
 
-- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr;
+- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr model:(YXMallSpecificationsModel *)model;
 
 @end
 

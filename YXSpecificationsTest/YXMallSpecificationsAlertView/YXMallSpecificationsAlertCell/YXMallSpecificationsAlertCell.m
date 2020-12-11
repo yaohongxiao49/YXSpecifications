@@ -35,15 +35,17 @@
 
 @interface YXMallSpecificationsAlertCell () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic, copy) YXMallSpecificationsModel *model;
 @property (nonatomic, copy) YXMallSpecificationsMsgModel *msgModel;
 
 @end
 
 @implementation YXMallSpecificationsAlertCell
 
-- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath arr:(NSArray *)arr {
+- (void)reloadValueByIndexPath:(NSIndexPath *)indexPath model:(YXMallSpecificationsModel *)model {
     
-    YXMallSpecificationsMsgModel *msgModel = arr[indexPath.section];
+    _model = model;
+    YXMallSpecificationsMsgModel *msgModel = _model.goodsSpecificationMsgArr[indexPath.section];
     _msgModel = msgModel;
     
     [self.collectionView reloadData];
@@ -76,7 +78,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     YXMallSpecificationAlertCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([YXMallSpecificationAlertCollectionViewCell class]) forIndexPath:indexPath];
-    [cell reloadValueByIndexPath:indexPath arr:_msgModel.goodSpecificationsSonArr];
+    [cell reloadValueByIndexPath:indexPath arr:_msgModel.goodSpecificationsSonArr model:_model];
     
     return cell;
 }
