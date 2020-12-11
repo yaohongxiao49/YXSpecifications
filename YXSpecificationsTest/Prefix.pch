@@ -1,0 +1,14 @@
+//
+//  Prefix.pch
+//  YXSpecificationsTest
+//
+//  Created by ios on 2020/12/11.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import "TYAlertController.h"
+#import "UIColor+MQHex.h"
+
+#endif /* Prefix_pch */

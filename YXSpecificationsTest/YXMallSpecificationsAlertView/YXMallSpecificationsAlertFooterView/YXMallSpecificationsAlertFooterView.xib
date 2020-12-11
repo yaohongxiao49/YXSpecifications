@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXMallSpecificationsAlertFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-RD-lcu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-vN-VRC">
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-BL-x39">
+                                    <rect key="frame" x="15" y="0.0" width="192" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                    <state key="normal" title="加入购物车">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="progressJoinBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="pIZ-Z1-9P0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pG5-BL-x39" firstAttribute="leading" secondItem="SLo-vN-VRC" secondAttribute="leading" constant="15" id="0uX-Lo-Cuf"/>
+                                <constraint firstAttribute="bottom" secondItem="pG5-BL-x39" secondAttribute="bottom" id="2tr-YZ-iwh"/>
+                                <constraint firstItem="pG5-BL-x39" firstAttribute="top" secondItem="SLo-vN-VRC" secondAttribute="top" id="8Of-cZ-mZP"/>
+                                <constraint firstAttribute="trailing" secondItem="pG5-BL-x39" secondAttribute="trailing" id="EHN-SX-JQc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi1-2n-LAc">
+                            <rect key="frame" x="207" y="0.0" width="207" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uj-WO-RIb">
+                                    <rect key="frame" x="0.0" y="0.0" width="192" height="40"/>
+                                    <color key="backgroundColor" red="1" green="0.14117647058823529" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                    <state key="normal" title="立即购买">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="progressBuyIngBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="n4B-Bk-s9K"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="5uj-WO-RIb" firstAttribute="top" secondItem="Pi1-2n-LAc" secondAttribute="top" id="1Hz-il-Pe7"/>
+                                <constraint firstAttribute="trailing" secondItem="5uj-WO-RIb" secondAttribute="trailing" constant="15" id="9Ya-WL-ZPx"/>
+                                <constraint firstItem="5uj-WO-RIb" firstAttribute="leading" secondItem="Pi1-2n-LAc" secondAttribute="leading" id="THw-OT-YOc"/>
+                                <constraint firstAttribute="bottom" secondItem="5uj-WO-RIb" secondAttribute="bottom" id="x2M-jl-4oB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SLo-vN-VRC" secondAttribute="bottom" id="21a-Z1-iyx"/>
+                        <constraint firstItem="Pi1-2n-LAc" firstAttribute="width" secondItem="SLo-vN-VRC" secondAttribute="width" id="2wI-YY-B0p"/>
+                        <constraint firstAttribute="trailing" secondItem="Pi1-2n-LAc" secondAttribute="trailing" id="664-1g-b3E"/>
+                        <constraint firstItem="Pi1-2n-LAc" firstAttribute="top" secondItem="gPl-RD-lcu" secondAttribute="top" id="9Xt-iv-pKf"/>
+                        <constraint firstItem="SLo-vN-VRC" firstAttribute="leading" secondItem="gPl-RD-lcu" secondAttribute="leading" id="P8e-Dz-qEh"/>
+                        <constraint firstItem="Pi1-2n-LAc" firstAttribute="leading" secondItem="SLo-vN-VRC" secondAttribute="trailing" id="SIU-32-zdc"/>
+                        <constraint firstAttribute="height" constant="40" id="aC8-6E-91A"/>
+                        <constraint firstItem="SLo-vN-VRC" firstAttribute="top" secondItem="gPl-RD-lcu" secondAttribute="top" id="r4t-IR-JgW"/>
+                        <constraint firstAttribute="bottom" secondItem="Pi1-2n-LAc" secondAttribute="bottom" id="vtN-rQ-FM8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gPl-RD-lcu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M1J-De-GJY"/>
+                <constraint firstItem="gPl-RD-lcu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OPs-wy-Es8"/>
+                <constraint firstAttribute="trailing" secondItem="gPl-RD-lcu" secondAttribute="trailing" id="uvd-ar-elp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="gPl-RD-lcu" id="yjt-aJ-5gF"/>
+                <outlet property="buyIngBgView" destination="Pi1-2n-LAc" id="OtR-Wg-j0r"/>
+                <outlet property="buyIngBtn" destination="5uj-WO-RIb" id="fum-3E-dQV"/>
+                <outlet property="joinBgView" destination="SLo-vN-VRC" id="Qs0-4f-hsi"/>
+                <outlet property="joinBtn" destination="pG5-BL-x39" id="ZEQ-5L-a1V"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="125.22321428571428"/>
+        </view>
+    </objects>
+</document>
