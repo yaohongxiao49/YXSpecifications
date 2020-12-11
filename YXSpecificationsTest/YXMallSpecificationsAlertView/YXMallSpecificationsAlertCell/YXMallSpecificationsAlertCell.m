@@ -60,7 +60,7 @@
 - (void)assemblyBoolSelecteArr {
     
     for (YXMallSpecificationsMsgModel *msgModel in _msgModel.goodSpecificationsSonArr) {
-        msgModel.boolSelected = NO;
+        msgModel.selectedId = @"";
     }
 }
 
@@ -84,7 +84,7 @@
     
     [self assemblyBoolSelecteArr];
     YXMallSpecificationsMsgModel *msgModel = _msgModel.goodSpecificationsSonArr[indexPath.row];
-    msgModel.boolSelected = YES;
+    msgModel.selectedId = msgModel.goodSpecificationsSonIdent;
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kYXMallSpecificationsReloadValueNoti object:nil];
 }

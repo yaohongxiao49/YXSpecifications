@@ -29,7 +29,7 @@
         _goodSpecificationsSonArr = [YXMallSpecificationsMsgModel arrayOfModelsFromDictionaries:[dic objectForKey:@"goodSpecificationsSonArr"]];
         _goodSpecificationsSonIdent = [dic objectForKey:@"goodSpecificationsSonIdent"];
         _goodSpecificationsSonTitle = [dic objectForKey:@"goodSpecificationsSonTitle"];
-        _boolSelected = [[dic objectForKey:@"boolSelected"] boolValue];
+        _selectedId = [[dic objectForKey:@"selectedId"] hasValue] ? [dic objectForKey:@"selectedId"] : @"";
     }
     return self;
 }

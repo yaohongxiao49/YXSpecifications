@@ -203,22 +203,22 @@
         _goodsSpecificationMsgFirstArr = [[NSMutableArray alloc] init];
         
         NSDictionary *dic;
-        dic = @{@"goodSpecificationsSonIdent":@"1", @"goodSpecificationsSonTitle":@"单次", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"1", @"goodSpecificationsSonTitle":@"单次", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"2", @"goodSpecificationsSonTitle":@"季卡", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"2", @"goodSpecificationsSonTitle":@"季卡", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"年卡", @"selectedId":@""};
         [_goodsSpecificationMsgFirstArr addObject:dic];
     }
     return _goodsSpecificationMsgFirstArr;
@@ -229,13 +229,13 @@
         _goodsSpecificationMsgSecondArr = [[NSMutableArray alloc] init];
         
         NSDictionary *dic;
-        dic = @{@"goodSpecificationsSonIdent":@"1", @"goodSpecificationsSonTitle":@"红色", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"1", @"goodSpecificationsSonTitle":@"红色", @"selectedId":@""};
         [_goodsSpecificationMsgSecondArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"2", @"goodSpecificationsSonTitle":@"黄色", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"2", @"goodSpecificationsSonTitle":@"黄色", @"selectedId":@""};
         [_goodsSpecificationMsgSecondArr addObject:dic];
         
-        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"蓝色", @"boolSelected":@(NO)};
+        dic = @{@"goodSpecificationsSonIdent":@"3", @"goodSpecificationsSonTitle":@"蓝色", @"selectedId":@""};
         [_goodsSpecificationMsgSecondArr addObject:dic];
     }
     return _goodsSpecificationMsgSecondArr;

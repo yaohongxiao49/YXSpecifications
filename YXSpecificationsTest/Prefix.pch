@@ -10,5 +10,6 @@
 
 #import "TYAlertController.h"
 #import "UIColor+MQHex.h"
+#import "NSString+tool.h"
 
 #endif /* Prefix_pch */

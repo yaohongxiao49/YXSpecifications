@@ -22,7 +22,7 @@
 - (void)judgeBtnShowByModel:(YXMallSpecificationsMsgModel *)model {
     
     self.titleBtn.layer.borderColor = [UIColor colorWithHexString:@"#FF2440"].CGColor;
-    if (model.boolSelected) {
+    if ([model.selectedId isEqualToString:model.goodSpecificationsSonIdent]) {
         [self.titleBtn setTitleColor:[UIColor colorWithHexString:@"#FF2440"] forState:UIControlStateNormal];
         self.titleBtn.backgroundColor = [UIColor colorWithHexString:@"#FFF5F6"];
         self.titleBtn.layer.borderWidth = 1;

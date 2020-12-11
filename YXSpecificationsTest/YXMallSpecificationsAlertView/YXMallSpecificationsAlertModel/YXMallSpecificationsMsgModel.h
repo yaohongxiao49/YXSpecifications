@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 规格子标题 */
 @property (nonatomic, copy) NSString *goodSpecificationsSonTitle;
 /** 规格是否选中 */
-@property (nonatomic, assign) BOOL boolSelected;
+@property (nonatomic, copy) NSString *selectedId;
 
 + (NSMutableArray *)arrayOfModelsFromDictionaries:(NSArray *)arr;
 - (instancetype)initWithDic:(NSDictionary *)dic;

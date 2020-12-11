@@ -40,6 +40,7 @@
 		84DE6C932583481700673934 /* YXMallSpecificationAlertCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DE6C912583481700673934 /* YXMallSpecificationAlertCollectionViewCell.xib */; };
 		84DE6C9A258349F900673934 /* YXMallSpecificationsAlertSecHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DE6C99258349F900673934 /* YXMallSpecificationsAlertSecHeaderView.m */; };
 		84DE6CA225834A0000673934 /* YXMallSpecificationsAlertSecHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DE6CA125834A0000673934 /* YXMallSpecificationsAlertSecHeaderView.xib */; };
+		84E97C5C25836A50001C2E1A /* NSString+tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E97C5B25836A50001C2E1A /* NSString+tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		84DE6C98258349F900673934 /* YXMallSpecificationsAlertSecHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXMallSpecificationsAlertSecHeaderView.h; sourceTree = "<group>"; };
 		84DE6C99258349F900673934 /* YXMallSpecificationsAlertSecHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXMallSpecificationsAlertSecHeaderView.m; sourceTree = "<group>"; };
 		84DE6CA125834A0000673934 /* YXMallSpecificationsAlertSecHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YXMallSpecificationsAlertSecHeaderView.xib; sourceTree = "<group>"; };
+		84E97C5A25836A50001C2E1A /* NSString+tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+tool.h"; sourceTree = "<group>"; };
+		84E97C5B25836A50001C2E1A /* NSString+tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+tool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				84DE6C1C258319C500673934 /* TYAlertController */,
 				84DE6C7D2583441A00673934 /* UIColor+MQHex.h */,
 				84DE6C7E2583441A00673934 /* UIColor+MQHex.m */,
+				84E97C5A25836A50001C2E1A /* NSString+tool.h */,
+				84E97C5B25836A50001C2E1A /* NSString+tool.m */,
 				84DE6BE42583198100673934 /* AppDelegate.h */,
 				84DE6BE52583198100673934 /* AppDelegate.m */,
 				84DE6BE72583198100673934 /* SceneDelegate.h */,
@@ -456,6 +461,7 @@
 				84DE6C35258319C500673934 /* UIView+TYAutoLayout.m in Sources */,
 				84DE6C38258319C500673934 /* TYBaseAnimation.m in Sources */,
 				84DE6C33258319C500673934 /* TYAlertFadeAnimation.m in Sources */,
+				84E97C5C25836A50001C2E1A /* NSString+tool.m in Sources */,
 				84DE6C5325831EDD00673934 /* YXMallSpecificationsMsgModel.m in Sources */,
 				84DE6BE92583198100673934 /* SceneDelegate.m in Sources */,
 				84DE6C4A25831C5400673934 /* YXMallSpecificationsModel.m in Sources */,
